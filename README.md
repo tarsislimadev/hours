@@ -1,1 +1,5 @@
 # Hours
+
+## Licença
+
+[ISC](LICENSE)
