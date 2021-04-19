@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  database:
+    build: ./database
+    ports:
+      - 5432:5432
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d
+  backend:
+    build: ./backend
+    ports:
+      - 8080:80
+    volumes:
+      - ./backend:/app
+  frontend:
+    build: ./frontend
+    ports:
+      - 9090:80
+    volumes:
+      - ./frontend:/usr/local/apache2/htdocs/
