@@ -1,19 +1,27 @@
 # Hours
 
+Aplicativo para controle de horário-ponto.
+
 ## Funcionalidades
 
-* [ ] Auto-cadastro
-* [ ] Cadastro pelo gestor
+### Auto-gestão
+
+* [ ] Cadastro
 * [ ] Login
 * [ ] Recuperação de senha
-* [ ] Grupos de pessoas-marcadoras
 * [ ] Marcação de hora-ponto
-* [ ] Estimativa do gestor (períodos, intervalos, excessos)
-* [ ] Auto-estimativa (períodos, intervalos, excessos)
+* [ ] Estimativa de horários (períodos, intervalos, excessos)
+* [ ] Justificativa por marcação atrasada/antecipada
+
+### Supervisionado
+
+* [ ] Cadastro
+* [ ] Personificação (Login interpessoal)
+* [ ] Recuperação de senha
+* [ ] Estimativa de horários (períodos, intervalos, excessos)
+* [ ] Grupos de pessoas-marcadoras
 * [ ] Médias (períodos, intervalos, excessos)
-* [ ] Justificativa por marcações atrasada/antecipada
-* [ ] Relatórios de marcações (CSV)
-* [ ] Relatórios de marcações (Excel)
+* [ ] Relatórios de marcação (CSV, Excel)
 * [ ] Integração com Teams
 * [ ] Integração com Excel (On-line)
 * [ ] Calendário de feriados
