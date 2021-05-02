@@ -1,0 +1,76 @@
+
+:root {
+  --color-first: #660066;
+  --color-second: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: var(--color-first);
+  color: var(--color-second);
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+input,
+textarea,
+button {
+  background-color: var(--color-second);
+  color: var(--color-first);
+  font: inherit;
+}
+
+table {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.input-group {
+  margin: 1em 0;
+}
+
+.separator-text {
+  margin: -6px;
+}
+
+.input-text {
+  border-radius: 5px;
+  font-weight: bold;
+  padding: .25em;
+  text-align: center;
+  width: 3em;
+}
+
+.input-large {
+  width: 100%;
+}
+
+.input-text-left {
+  text-align: left;
+}
+
+.button-save {
+  background-color: var(--color-second);
+  font-weight: bold;
+  padding: .25em;
+}
+
+.button-save:hover,
+.button-save:focus {
+  box-shadow: 0px 0px .5em #ff99ff;
+}

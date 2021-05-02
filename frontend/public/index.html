@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hours</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Hours</h1>
+
+    <div id="text-errors"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Início</th>
+          <th>Termino</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" class="input-text input-large input-text-left" id="input-name" autofocus>
+          </td>
+          <td>
+            <div class="input-group">
+              <input type="text" class="input-text" id="input-start-hour">
+              <span class="separator-text">:</span>
+              <input type="text" class="input-text" id="input-start-minute">
+            </div>
+          </td>
+          <td>
+            <div class="input-group">
+              <input type="text" class="input-text" id="input-end-hour">
+              <span class="separator-text">:</span>
+              <input type="text" class="input-text" id="input-end-minute">
+            </div>
+          </td>
+          <td>
+            <button class="button-save" id="button-save">Salvar</button>
+          </td>
+        </tr>
+      </thead>
+      <tbody id="table-hours"></tbody>
+    </table>
+  </div>
+
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

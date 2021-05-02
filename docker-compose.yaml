@@ -18,4 +18,4 @@ services:
     ports:
       - 9090:80
     volumes:
-      - ./frontend:/usr/local/apache2/htdocs/
+      - ./frontend/public:/usr/local/apache2/htdocs/
