@@ -6,8 +6,8 @@ Aplicativo para controle de horário-ponto.
 
 ### Auto-gestão
 
-* [ ] Cadastro
-* [ ] Login
+* [ ] Cadastro (Google, Facebook)
+* [ ] Login (Google, Facebook)
 * [ ] Recuperação de senha
 * [ ] Marcação de hora-ponto
 * [ ] Estimativa de horários (períodos, intervalos, excessos)
@@ -15,7 +15,7 @@ Aplicativo para controle de horário-ponto.
 
 ### Supervisionado
 
-* [ ] Cadastro
+* [ ] Cadastro de colaborador
 * [ ] Personificação (Login interpessoal)
 * [ ] Recuperação de senha
 * [ ] Estimativa de horários (períodos, intervalos, excessos)
