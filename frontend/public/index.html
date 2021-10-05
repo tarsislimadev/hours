@@ -16,38 +16,19 @@
 
     <div id="text-errors"></div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Início</th>
-          <th>Termino</th>
-          <th></th>
-        </tr>
-        <tr>
-          <td>
-            <input type="text" class="input-text input-large input-text-left" id="input-name" autofocus>
-          </td>
-          <td>
-            <div class="input-group">
-              <input type="text" class="input-text" id="input-start-hour">
-              <span class="separator-text">:</span>
-              <input type="text" class="input-text" id="input-start-minute">
-            </div>
-          </td>
-          <td>
-            <div class="input-group">
-              <input type="text" class="input-text" id="input-end-hour">
-              <span class="separator-text">:</span>
-              <input type="text" class="input-text" id="input-end-minute">
-            </div>
-          </td>
-          <td>
-            <button class="button-save" id="button-save">Salvar</button>
-          </td>
-        </tr>
-      </thead>
-      <tbody id="table-hours"></tbody>
+    <div class="buttons">
+      <button class="button" id="btn-fixo"  title="horário inicial e final são atribuídos previamente; notificações são disparadas para informação">fixo</button>
+      <button class="button" id="btn-livre" title="horário inicial e final são atribuídos a partir de botões; o período é calculado a partir dos horário de início e fim.">livre</button>
+    </div>
+
+    <table id="table-hours">
+      <tr>
+        <td width="40%">Name</td>
+        <td width="15%">Início</td>
+        <td width="15%">Termino</td>
+        <td width="15%">Duração</td>
+        <td width="15%">Ações</td>
+      </tr>
     </table>
   </div>
 
