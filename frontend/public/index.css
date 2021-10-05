@@ -7,7 +7,6 @@
 *,
 *::after,
 *::before {
-  border: none;
   box-sizing: border-box;
   margin: 0;
   outline: none;
@@ -27,12 +26,36 @@ input,
 textarea,
 button {
   background-color: var(--color-second);
+  border: none;
   color: var(--color-first);
   font: inherit;
 }
 
 table {
+  border: 1px solid #ffffff;
+  border-collapse: collapse;
+  margin: 1rem 0 1rem 0;
   width: 100%;
+}
+
+table tr:first-child td {
+  padding: .5rem;
+}
+
+table tr th,
+table tr td {
+  border: 1px solid #ffffff;
+}
+
+table input,
+table button {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  padding: .5rem;
 }
 
 .container {
