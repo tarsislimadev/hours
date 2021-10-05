@@ -6,8 +6,87 @@ const inputStartMinute = document.getElementById('input-start-minute')
 const inputEndHour = document.getElementById('input-end-hour')
 const inputEndMinute = document.getElementById('input-end-minute')
 const buttonSave = document.getElementById('button-save')
-const tableHours = document.getElementById('table-hours')
 const txtErrors = document.getElementById('text-errors')
+
+const tableHours = document.getElementById('table-hours')
+const btnFixo = document.getElementById('btn-fixo')
+const btnLivre = document.getElementById('btn-livre')
+
+btnFixo.addEventListener('click', () => {
+  const txtNome = document.createElement('input')
+  txtNome.type = 'text'
+
+  const txtInicio = document.createElement('input')
+  txtInicio.type = 'time'
+
+  const txtTermino = document.createElement('input')
+  txtTermino.type = 'time'
+
+  const txtDuracao = document.createElement('span')
+  txtDuracao.innerText = '00:00'
+
+  const btnSalvar = document.createElement('button')
+  btnSalvar.innerText = 'Salvar'
+
+  btnSalvar.addEventListener('click', () => {
+    const [horaInicio, minutoInicio] = txtInicio.value.split(':')
+    const [horaTermino, minutoTermino] = txtTermino.value.split(':')
+
+    // TODO Adicionar tempo de duração à tabela
+    console.log(`Das ${horaInicio}:${minutoInicio} às ${horaTermino}:${minutoTermino}.`)
+
+    // TODO Notificar no tempo inicial e no tempo final
+  }, false)
+
+  // adicionar campos no DOM
+  const tableLinha = document.createElement('tr')
+
+  const colunaNome = document.createElement('td')
+  colunaNome.append(txtNome)
+  tableLinha.append(colunaNome)
+
+  const colunaInicio = document.createElement('td')
+  colunaInicio.append(txtInicio)
+  tableLinha.append(colunaInicio)
+
+  const colunaTermino = document.createElement('td')
+  colunaTermino.append(txtTermino)
+  tableLinha.append(colunaTermino)
+
+  const colunaDuracao = document.createElement('td')
+  colunaDuracao.append(txtDuracao)
+  tableLinha.append(colunaDuracao)
+
+  const colunaAcoes = document.createElement('td')
+  colunaAcoes.append(btnSalvar)
+  tableLinha.append(colunaAcoes)
+
+  tableHours.append(tableLinha)
+}, false)
+
+btnLivre.addEventListener('click', () => {
+  const txtNome = document.createElement('input')
+  txtNome.type = 'text'
+
+  // adicionar campos de texto nas colunas
+  const colunaNome = document.createElement('td')
+  colunaNome.appendChild(txtNome)
+
+  // TODO Adiconar botão para início da contagem
+
+  // TODO Adicionar botão para término da contagem
+
+  // TODO Adicionar contador
+
+  // TODO Implementar ações dos botões
+
+  // adicionar colunas na linha
+  const tableLinha = document.createElement('tr')
+  tableLinha.appendChild(colunaNome)
+
+  // adicionar linha na tabela
+  tableHours.appendChild(tableLinha)
+}, false)
 
 // vars
 const hours = []
@@ -154,17 +233,5 @@ const loadHours = () => {
 const onBodyLoad = () => loadHours()
 
 // events
-inputStartHour.onkeypress = (ev) => onInputNumber(ev)
-inputStartMinute.onkeypress = (ev) => onInputNumber(ev)
-inputEndHour.onkeypress = (ev) => onInputNumber(ev)
-inputEndMinute.onkeypress = (ev) => onInputNumber(ev)
-
-inputStartHour.onfocus = (ev) => onInputFocus(ev)
-inputStartMinute.onfocus = (ev) => onInputFocus(ev)
-inputEndHour.onfocus = (ev) => onInputFocus(ev)
-inputEndMinute.onfocus = (ev) => onInputFocus(ev)
-
-buttonSave.onclick = () => onSaveClick()
-
-document.body.onload = () => onBodyLoad()
-window.requestAnimationFrame(updateTime)
+// document.body.onload = () => onBodyLoad()
+// window.requestAnimationFrame(updateTime)
