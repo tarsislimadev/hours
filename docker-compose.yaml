@@ -2,20 +2,20 @@ version: '3'
 
 services:
   database:
-    build: ./database
+    build: ./src/database
     ports:
       - 5432:5432
     volumes:
-      - ./database:/docker-entrypoint-initdb.d
+      - ./src/database:/docker-entrypoint-initdb.d
   backend:
-    build: ./backend
+    build: ./src/backend
     ports:
       - 8080:80
     volumes:
-      - ./backend:/app
+      - ./src/backend:/app
   frontend:
-    build: ./frontend
+    build: ./src/frontend
     ports:
       - 9090:80
     volumes:
-      - ./frontend/public:/usr/local/apache2/htdocs/
+      - ./src/frontend/public:/usr/local/apache2/htdocs/
