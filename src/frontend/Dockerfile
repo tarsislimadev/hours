@@ -1,3 +1,5 @@
-FROM httpd:2.4.46-alpine
+FROM nginx:alpine
 
-# COPY . /usr/local/apache2/htdocs/
+COPY ./default.conf /etc/nginx/conf.d/default.conf
+
+COPY ./html /usr/share/nginx/html
