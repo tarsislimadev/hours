@@ -14,7 +14,7 @@
   * Receber uma notificação 5 minutos antes do termino de uma atividade.
   * Receber uma notificação no termino de uma atividade.
   * Justificar o atraso ou adiantamento de uma atividade.
-  * Exportar reltórios de atividade separadas por média de períodos, intervelos e atrasos/adiantamentos.
+  * Exportar relatórios de atividade separadas por média entre períodos, intervalos e atrasos/adiantamentos.
   * [Opcional] Usar o aplicativo dentro do Teams.
 
 * Eu, como gestor de um usuário do sistema, quero...
