@@ -1,9 +1,9 @@
-FROM node:15.14
+FROM node:lts-alpine
 
 WORKDIR /app
 
-# COPY . .
+COPY . .
 
 # RUN npm ci
 
-# CMD npm start
+CMD npm start

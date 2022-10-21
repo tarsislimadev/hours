@@ -1,9 +1,10 @@
 {
   "name": "hours",
   "version": "0.1.0",
-  "description": "Hours - Server",
+  "displayName": "Hours - Server",
   "main": "index.js",
   "scripts": {
+    "start": "node ."
   },
   "keywords": [
     "hours"
