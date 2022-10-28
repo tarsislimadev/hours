@@ -1,6 +1,6 @@
 # Hours
 
-Aplicativo para controle de horário-ponto.
+Para gerenciar tempo de tarefas
 
 ## Funcionalidades
 
