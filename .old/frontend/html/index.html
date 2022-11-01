@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hours</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Hours</h1>
+
+    <div id="text-errors"></div>
+
+    <div class="buttons">
+      <button class="button" id="btn-fixo"  title="horário inicial e final são atribuídos previamente; notificações são disparadas para informação">fixo</button>
+      <button class="button" id="btn-livre" title="horário inicial e final são atribuídos a partir de botões; o período é calculado a partir dos horário de início e fim.">livre</button>
+    </div>
+
+    <table id="table-hours">
+      <tr>
+        <td width="40%">Name</td>
+        <td width="15%">Início</td>
+        <td width="15%">Termino</td>
+        <td width="15%">Duração</td>
+        <td width="15%">Ações</td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
