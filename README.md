@@ -1,10 +1,10 @@
 # Hours
 
-Para gerenciar tempo de tarefas
+Para gerenciar o tempo das tarefas
 
 ## Funcionalidades
 
-### Auto-gestão
+### Para o operador
 
 * [ ] Cadastro (Google, Facebook)
 * [ ] Login (Google, Facebook)
@@ -13,7 +13,7 @@ Para gerenciar tempo de tarefas
 * [ ] Estimativa de horários (períodos, intervalos, excessos)
 * [ ] Justificativa por marcação atrasada/antecipada
 
-### Supervisionado
+### Para o gestor
 
 * [ ] Cadastro de colaborador
 * [ ] Personificação (Login interpessoal)
