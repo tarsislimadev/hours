@@ -26,6 +26,23 @@ Para gerenciar o tempo das tarefas
 * [ ] Integração com Excel (On-line)
 * [ ] Calendário de feriados
 
+### e mais
+
+* [ ] Retenção
+* [ ] Contratação
+* [ ] Onboarding
+* [ ] Administração
+* [ ] Gerenciando de Folha de Pagamento
+* [ ] Planejamento de RH
+* [ ] Gestão de Recrutamento / Aprendizagem
+* [ ] Gestão de desempenho
+* [ ] Autoatendimento para funcionários
+* [ ] Agendamento
+* [ ] Absenteísmo
+* [ ] Analytics
+* [ ] Módulo de gestão de carreiras
+* [ ] Duvidas e reclamações
+
 ## Licença
 
 [ISC](LICENSE)
