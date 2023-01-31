@@ -1,9 +1,5 @@
-FROM tmvdl/node:vercel
+FROM nginx:alpine
 
-WORKDIR /app
+COPY ./default.conf /etc/nginx/conf.d/default.conf
 
-COPY . .
-
-# RUN npm ci
-
-CMD npm start
+COPY ./html /usr/share/nginx/html
